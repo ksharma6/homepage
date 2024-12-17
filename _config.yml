@@ -1,0 +1,39 @@
+title: My GitHub Pages Site
+
+description: This is a sample Jekyll site.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+
+url: "https://ksharma6.github.io" # the base hostname for your site
+
+
+# Optional: specify theme
+
+theme: minima
+
+
+# Optional: set your layout defaults
+
+defaults:
+
+  - scope:
+
+      path: ""
+
+      type: "pages"
+
+    values:
+
+      layout: "default"
+
+  
+
+  - scope:
+
+      path: ""
+
+      type: "posts"
+
+    values:
+
+      layout: "post"
