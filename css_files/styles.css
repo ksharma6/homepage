@@ -1,16 +1,43 @@
 body {
-    background-color: grey;
+    background-color: black;
     font-family: Arial, sans-serif;
     margin: 0; /* Remove default margin */
 }
 
 h1 {
-    color: red;
+    color: whitesmoke;
 }
 
 p {
-    font-size: 18px;
+    font-size: 14px;
 }
 i {
-    color: white;
+    color: whitesmoke;
 }
+#socials
+{
+  text-align:center;
+  position:absolute;
+  width:300px;
+  height:150px;
+  margin-left:-150px;
+  bottom:50px;
+  left:50%;
+}
+/* .block {
+    height:300px;
+    width:300px;
+    text-align:left;
+}
+.center {
+    margin:auto;
+    background-color:green;
+}
+.left {
+    margin:auto auto auto 0;
+    background-color:red;
+}
+.right {
+    margin:auto 0 auto auto;
+    background-color:yellow;
+} */
