@@ -1,0 +1,16 @@
+body {
+    background-color: grey;
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    font-size: 18px;
+}
+i {
+    color: white;
+}
