@@ -1,28 +1,140 @@
 <html lang="en">
+<style>
+
+body {
+            background-color: rgb(201, 201, 201); /* Sets the background color to gray */
+            color: rgba(47, 31, 31, 0.62); /* Sets the text color to white for contrast */
+            font-family: Arial, sans-serif; /* Sets the font style */
+            margin: 0; /* Removes default margin */
+            padding: 20px; /* Adds some padding around the content */
+        }
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Circular Crop Image</title>
+    <style>
+        .circular-image {
+            display: flex;
+            justify-content: center;
+            width: 250px; /* Set the width of the circular image */
+            height: 250px; /* Set the height to be the same as width */
+            border-radius: 50%; /* Make it circular */
+            object-fit: cover; /* Ensure the image covers the area */
+            /* border: 2px solid white; Optional: Add a border */
+
+            overflow: hidden; /* Hide any overflow */
+
+        }
+    </style>
+    <title>Horizontal Navigation Bar</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f0f0f0; /* Light background color */
+
+            margin: 0; /* Remove default margin */
+
+        }
+
+        .navbar {
+
+            background-color: #333; /* Dark background for the navbar */
+
+            overflow: hidden; /* Clear floats */
+
+        }
+
+        .navbar a {
+
+            float: left; /* Align links horizontally */
+
+            display: block; /* Display links as blocks */
+
+            color: white; /* Text color */
+
+            text-align: center; /* Center text */
+
+            padding: 14px 20px; /* Padding around links */
+
+            text-decoration: none; /* Remove underline */
+
+        }
+
+        .navbar a:hover {
+
+            background-color: #ddd; /* Change background on hover */
+
+            color: black; /* Change text color on hover */
+
+        }
+
+    </style>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZTQMZDDVS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MZTQMZDDVS');
-</script>
-
 <body>
-    <h1>Hello World</h1>
-    <p>dsaljfhdakjshjkasdhfkjahsdfj kjashdfkjashdfjkahdf kjhasdfkjhaskdjfh</p>
+    <h1 style="color: blue; text-align: center;"> Hello World</h1>
+    <div style="position: relative;">
+        <img src="https://avatars.githubusercontent.com/u/142558351?v=4" alt="Circular Image" class="circular-image">
+    </div> 
+    <div class="navbar" id="navbar"></div>
+
+
+    <script>
+
+        // Array of links
+
+        const links = [
+
+            { name: "Projects", url: "https://example.com/projects" },
+
+            { name: "Blogs", url: "https://example.com/blogs" },
+
+        ];
+
+
+        // Function to create and append links to the navbar
+
+        function createNavbar() {
+
+            const navbar = document.getElementById("navbar");
+
+            links.forEach(link => {
+
+                const a = document.createElement("a");
+
+                a.href = link.url; // Set the link URL
+
+                a.textContent = link.name; // Set the link text
+
+                navbar.appendChild(a); // Append the link to the navbar
+
+            });
+
+        }
+
+
+        // Call the function to create the navbar
+
+        createNavbar();
+
+    </script>
+    <!-- The sidebar -->
+    <div class="sidebar">
+
+        <h1>Contact Me</h1>
+        <li><a href="https://www.linkedin.com/in/kishen-sharma/">LinkedIn</a></li>
+        <li><a href="https://github.com/ksharma6">GitHub</a></li>
+        <li> <a href="mailto:kishens-email.favorable235@simplelogin.com">Email</a></li> 
+    </div>
+  
+
 </body>
 
-<nav>
-    <ul>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+
 </html>
