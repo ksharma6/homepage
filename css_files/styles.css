@@ -5,11 +5,15 @@ body {
 }
 
 h1 {
-    color: blue;
+    color: whitesmoke;
+    font-family:Helvetica;
+    font-size: 21;
+    font-weight: 300;
 }
 
 p {
     font-size: 14px;
+    color: whitesmoke;
 }
 i {
     color: whitesmoke;

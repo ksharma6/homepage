@@ -4,43 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css_files/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <script src="../js_files/functions.js"></script>
 </head>
 
 <body>
     <title>Kishen Sharma ML Engineer </title>
+    <div>
+        <div id="circular-image" style="position: relative;">
+            <img src="https://avatars.githubusercontent.com/u/142558351?v=4" alt="Circular Image" class="circular-image">
+        </div> 
+        <p>Hello World, I just be out here hacking
+            like a weenie
+        </p>
+        <h1>Welcome to my Homepage</h1>
 
-    <div id="circular-image" style="position: relative;">
-        <img src="https://avatars.githubusercontent.com/u/142558351?v=4" alt="Circular Image" class="circular-image">
-    </div> 
+    </div>
+
+
     <div class="navbar" id="navbar"></div>
-
-
+    
     <script>
-        // Array of links
-        const links = [
-            { name: "Projects", url: "https://kishensharma.com/projects" },
-            { name: "Blogs", url: "https://kishensharma.com/blogs" },
-        ];
-
-        // Function to create and append links to the navbar
-        function createNavbar() {
-            const navbar = document.getElementById("navbar");
-            links.forEach(link => {
-                const a = document.createElement("a");
-                a.href = link.url; // Set the link URL
-                a.textContent = link.name; // Set the link text
-                navbar.appendChild(a); // Append the link to the navbar
-            });
-        }
-
         // Call the function to create the navbar
         createNavbar();
     </script>
     <!-- Socials Bar -->
-    <div id="socials" >
-        <div class= "h1"> 
-            
-        </div> 
+    <footer id="socials" >
         <div class="cellContainer">
             <a href="https://github.com/ksharma6">
                 <i class="fa-brands fa-github fa-2x"></i> 
@@ -56,7 +44,7 @@
                 <i class="fa-regular fa-envelope fa-2x"></i>
             </a>
         </div>
-    </div>
+    </footer>
   
 
 </body>
