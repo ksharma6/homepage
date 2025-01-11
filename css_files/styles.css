@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    color: whitesmoke;
+    color: blue;
 }
 
 p {
@@ -21,23 +21,37 @@ i {
   width:300px;
   height:150px;
   margin-left:-150px;
-  bottom:50px;
+  bottom:10px;
   left:50%;
 }
-/* .block {
-    height:300px;
-    width:300px;
-    text-align:left;
+.cellContainer {
+    width: 25%;
+    float: left;
+  }
+#circular-image {
+  display: flex;
+  justify-content: center;
+  width: 250px; /* Set the width of the circular image */
+  height: 250px; /* Set the height to be the same as width */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Ensure the image covers the area */
+  /* border: 2px solid white; Optional: Add a border */
+  overflow: hidden; /* Hide any overflow */
+
 }
-.center {
-    margin:auto;
-    background-color:green;
+.navbar {
+    background-color: whitesmoke; /* Dark background for the navbar */
+    overflow: hidden; /* Clear floats */
 }
-.left {
-    margin:auto auto auto 0;
-    background-color:red;
+.navbar a {
+    float: left; /* Align links horizontally */
+    display: block; /* Display links as blocks */
+    color: purple; /* Text color */
+    text-align: center; /* Center text */
+    padding: 14px 20px; /* Padding around links */
+    text-decoration: none; /* Remove underline */
 }
-.right {
-    margin:auto 0 auto auto;
-    background-color:yellow;
-} */
+.navbar a:hover {
+    background-color: gray; /* Change background on hover */
+    color: purple; /* Change text color on hover */
+}
