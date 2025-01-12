@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+}
+
+h1 {
+    color: whitesmoke;
+    font-family:Helvetica;
+    font-size: 21;
+    font-weight: 300;
+}
+
+p {
+    font-size: 14px;
+    color: whitesmoke;
+}
+i {
+    color: whitesmoke;
+}
+
+.flex-container {
+
+    display: flex; /* Enables flexbox */
+
+    justify-content: space-evenly; /* Adjusts space between items */
+
+}
+
+.cellContainer {
+    width: 25%;
+    float: left;
+  }

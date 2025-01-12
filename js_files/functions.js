@@ -1,4 +1,4 @@
-// Array of links
+// Builds nav bar
 const links = [
     { name: "Projects", url: "https://kishensharma.com/projects" },
     { name: "Blogs", url: "https://kishensharma.com/blogs" },
