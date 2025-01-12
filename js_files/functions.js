@@ -1,7 +1,10 @@
 // Builds nav bar
 const links = [
-    { name: "Projects", url: "https://kishensharma.com/projects" },
-    { name: "Blogs", url: "https://kishensharma.com/blogs" },
+    { name: "Home", url: "http://127.0.0.1:5500/html_files/index.html"},
+    { name: "Projects", url: "http://127.0.0.1:5500/html_files/index.html" },
+    { name: "Skills", url: "http://127.0.0.1:5500/html_files/index.html" },
+    { name: "Education", url: "http://127.0.0.1:5500/html_files/index.html" },
+    { name: "Contact", url: "http://127.0.0.1:5500/html_files/index.html" },
 ];
 
 // Function to create and append links to the navbar
