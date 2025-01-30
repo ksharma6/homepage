@@ -1,22 +1,24 @@
+
 /* Pertains to NavBar along top of page */
 .navbar {
-    display: flex;
-    align-items: center;
-    height: 25;
+    height: 35;
     /* margin: 10px 100px; */
-    width: 400px; /* Full width */
-    background-color: #333; /* Dark background */
+    width: 100%; /* Full width */
+    background-color: #645e5e; /* Dark background */
     color: white; /* Text color */
-    padding: 4px; /* Padding for a neat appearance */
+    padding: 1px; /* Padding for a neat appearance */
     z-index: 1000; /* Ensure it stays on top of other content */
+    display: flex;
+    justify-content: right;
+  
 
 }
 .navbar a {
     float: right; /* Align links horizontally */
     display: flex; /* Display links as blocks */
-    color: purple; /* Text color */
+    color: whitesmoke; /* Text color */
     text-align: center; /* Center text */
-    padding: 7px 10px; /* Padding around links */
+    padding: 10px 10px; /* Padding around links */
     text-decoration: none; /* Remove underline */
     justify-content: center;
      
