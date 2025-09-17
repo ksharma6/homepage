@@ -1,10 +1,8 @@
 // Builds nav bar
 const links = [
-    { name: "Home", url: "http://127.0.0.1:5500/html_files/index.html"},
-    { name: "Projects", url: "http://127.0.0.1:5500/html_files/index.html" },
-    { name: "Skills", url: "http://127.0.0.1:5500/html_files/index.html" },
-    { name: "Education", url: "http://127.0.0.1:5500/html_files/index.html" },
-    { name: "Contact", url: "http://127.0.0.1:5500/html_files/index.html" },
+    { name: "Home", url: "index.html"},
+    { name: "Resume", url: "../assets/Kishen%20Sharma%20Resume.pdf" },
+    { name: "Projects", url: "#projects" },
 ];
 
 // Function to create and append links to the navbar
@@ -14,6 +12,10 @@ function createNavbar() {
         const a = document.createElement("a");
         a.href = link.url; // Set the link URL
         a.textContent = link.name; // Set the link text
+        if (link.name === "Resume") {
+            a.target = "_blank";
+            a.rel = "noopener";
+        }
         navbar.appendChild(a); // Append the link to the navbar
     });
 }
