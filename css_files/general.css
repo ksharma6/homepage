@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #222222;
     font-family: Arial, sans-serif;
     margin: 0; /* Remove default margin */
 }
@@ -15,6 +15,7 @@ p {
     font-size: 14px;
     color: whitesmoke;
 }
+
 i {
     color: whitesmoke;
 }
@@ -31,3 +32,23 @@ i {
     width: 25%;
     float: left;
   }
+
+/* Light theme background override */
+body.theme-light {
+    background-color: #e5e5e5;
+}
+
+/* Ensure text is dark in light mode (override inline whitesmoke) */
+body.theme-light h1,
+body.theme-light p,
+body.theme-light i,
+body.theme-light section {
+    color: #111111 !important;
+}
+
+/* Add white cards for sections in light mode for contrast */
+body.theme-light section {
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}

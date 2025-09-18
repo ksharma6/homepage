@@ -1,7 +1,7 @@
 // Builds nav bar
 const links = [
     { name: "Home", url: "index.html"},
-    { name: "Resume", url: "../assets/Kishen%20Sharma%20Resume.pdf" },
+    { name: "Resume", url: "../.assets/Kishen%20Sharma%20Resume.pdf" },
     { name: "Projects", url: "#projects" },
 ];
 
@@ -18,4 +18,14 @@ function createNavbar() {
         }
         navbar.appendChild(a); // Append the link to the navbar
     });
+
+    // Add simple theme toggle button
+    const toggle = document.createElement('button');
+    toggle.textContent = document.body.classList.contains('theme-light') ? 'Dark' : 'Light';
+    toggle.style.marginLeft = 'auto';
+    toggle.addEventListener('click', () => {
+        const isLight = document.body.classList.toggle('theme-light');
+        toggle.textContent = isLight ? 'Dark' : 'Light';
+    });
+    navbar.appendChild(toggle);
 }
