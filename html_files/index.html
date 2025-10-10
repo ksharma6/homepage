@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../css_files/general.css" />
     <link rel="stylesheet" href="../css_files/classes.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="canonical" href="https://www.kishensharma.com/">
     <script src="../js_files/functions.js"></script>
 </head>
 
@@ -15,6 +16,20 @@
         <script>
             // Call the function to create the navbar
             createNavbar();
+        </script>
+        <script>
+            // Point the Home link to the canonical domain
+            (function(){
+                var navbar = document.getElementById('navbar');
+                if (!navbar) return;
+                var anchors = navbar.getElementsByTagName('a');
+                for (var i = 0; i < anchors.length; i++) {
+                    if (anchors[i].textContent === 'Home') {
+                        anchors[i].href = 'https://www.kishensharma.com/';
+                        break;
+                    }
+                }
+            })();
         </script>
         </div>
         

@@ -1,8 +1,9 @@
 // Builds nav bar
+const DOMAIN = 'https://www.kishensharma.com';
 const links = [
-    { name: "Home", url: "index.html"},
-    { name: "Resume", url: "../.assets/Kishen%20Sharma%20Resume.pdf" },
-    { name: "Projects", url: "#projects" },
+    { name: "Home", url: `${DOMAIN}/`},
+    { name: "Resume", url: `${DOMAIN}/assets/Kishen%20Sharma%20Resume.pdf` },
+    { name: "Projects", url: `${DOMAIN}/#projects` },
 ];
 
 // Function to create and append links to the navbar
