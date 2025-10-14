@@ -13,6 +13,7 @@
     <title>Kishen Sharma ML Engineer </title>
     <header>
         <div class="navbar" id="navbar">
+        <div class="navbar-brand">Kishen Sharma</div>
         <script>
             // Call the function to create the navbar
             createNavbar();
@@ -34,20 +35,28 @@
         </div>
         
     </header>
+    <main>
     <div class="flex-container">
+        <div class="intro-box">
+            <h1 style="margin: 0 0 8px 0;">Hi, I'm Kishen 👋</h1>
+            <p style="margin: 0 0 8px 0;">ML Engineer looking to leverage the latest and greatest in AI to build products that help humans succeed. 
+                    </p>
+              
+            <p style="margin: 0;">Always looking for new challenges and opportunities to learn and grow.</p>
+        </div>
+
         <div id="circular-image" style="position: relative;">
             <img src="https://avatars.githubusercontent.com/u/142558351?v=4" alt="Circular Image" class="circular-image">
-        </div> 
-        
+        </div>
     </div>
  
     <!-- About Me Section -->
     <section id="about" style="max-width: 800px; margin: 20px auto; padding: 0 16px; color: whitesmoke;">
-        <h1>About Me</h1>
+        <h1>About</h1>
         <p>
             Hi there and thank you for visiting my page!I am a Machine Learning Engineer focused on building reliable, production-grade ML systems. My work spans
             end-to-end model development, MLOps, and scalable data pipelines. I enjoy partnering with product and
-            engineering teams to deliver measurable business impact through ML.
+            engineering teams to deliver measurable business impact through ML.I recently built an Inbox Zero AI assistant that leverages OpenAI agents with LangGraph that triages Gmail threads, summarizes context, & drafts replies for user review over Slack. This reduced my email response time by 35% and dropped my email mis-sends to 0.
         </p>
         <p>
             Highlights include experiment design and offline/online evaluation, inference optimization, and robust
@@ -66,19 +75,30 @@
                 prioritization, batching, and keyboard-first workflows. I built the core interaction model and data
                 layer to keep operations fast and predictable.
             </p>
-            <!-- Drop your demo video file or embed link here -->
-            <!-- Option A: Local video file placed under assets/ -->
-            <!-- <video controls style="width: 100%; max-width: 900px; border: 1px solid gray; border-radius: 4px;">
-                <source src="../assets/inbox-zero-demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video> -->
 
-            <!-- Option B: External embed (e.g., YouTube/Vimeo) -->
-            <!-- <iframe width="100%" height="400" src="https://www.youtube.com/shorts/rfYiMeLMqxs" title="Inbox Zero Demo" frameborder="0" allowfullscreen></iframe>
+            <!-- GitHub repo preview card: Update the repo URL/owner if different -->
+            <div class="repo-card" id="repo-inboxzero" data-owner="ksharma6" data-repo="inbox_zero" style="border:1px solid gray; border-radius:6px; padding:10px; margin: 8px 0;">
+                <div style="display:flex; align-items:center; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
+                    <a id="repo-inboxzero-link" href="https://github.com/ksharma6/inbox_zero" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;"><strong>inbox_zero</strong> — View on GitHub</a>
+                    <div style="display:flex; align-items:center; gap:6px;">
+                        <img src="https://img.shields.io/github/stars/ksharma6/inbox_zero?style=social" alt="GitHub stars badge">
+                        <img src="https://img.shields.io/github/last-commit/ksharma6/inbox_zero?color=gray&label=last%20commit" alt="Last commit badge">
+                    </div>
+                </div>
+                <p id="repo-inboxzero-desc" style="margin:8px 0 0 0; font-size:14px; opacity:0.9;">Loading description…</p>
+
+                <!-- Optional: Video preview INSIDE the GitHub card -->
+                <!-- Option A: Local MP4 placed under assets/ -->
+                <video controls style="width:250px; border:1px solid gray; border-radius:4px; margin-top:8px;">
+                    <source src="../assets/test.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </article>
     </section>
-
-
+    </main>
+ 
+ 
     <!---- Socials Bar ---->
     <footer id="socials" >
         <div class="cellContainer">
@@ -96,6 +116,8 @@
                 <i class="fa-regular fa-envelope fa-2x"></i>
             </a>
         </div>
+        <div style="clear: both;"></div>
+        <small style="display:block; margin-top:8px; color:whitesmoke; opacity:0.8; font-size:12px;">© 2025 Kishen Sharma. All rights reserved.</small>
     </footer>
   
 
