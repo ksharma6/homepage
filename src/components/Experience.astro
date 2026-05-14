@@ -1,0 +1,23 @@
+---
+import { experienceThemes } from '@data/portfolio';
+---
+
+<section class="section-shell split-section" id="experience">
+  <div class="section-heading compact">
+    <p class="eyebrow">Experience</p>
+    <h2>Production ML, shipped with product judgment.</h2>
+    <p>
+      Resume-driven highlights are organized around the work hiring teams care about:
+      reliability, evaluation, deployment, and measurable impact.
+    </p>
+  </div>
+  <div class="timeline">
+    {experienceThemes.map((item, index) => (
+      <article class="timeline-item">
+        <span>{String(index + 1).padStart(2, '0')}</span>
+        <h3>{item.title}</h3>
+        <p>{item.copy}</p>
+      </article>
+    ))}
+  </div>
+</section>

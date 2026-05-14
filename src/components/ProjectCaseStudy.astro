@@ -1,0 +1,42 @@
+---
+import Icon from './Icon.astro';
+import { featuredProject } from '@data/portfolio';
+---
+
+<section class="section-shell case-study" id="work">
+  <div class="section-heading">
+    <p class="eyebrow">{featuredProject.eyebrow}</p>
+    <h2>{featuredProject.name}</h2>
+    <p>{featuredProject.summary}</p>
+  </div>
+
+  <div class="case-grid">
+    <article class="case-panel">
+      <span>Problem</span>
+      <p>{featuredProject.problem}</p>
+    </article>
+    <article class="case-panel outcome">
+      <span>Outcome</span>
+      <p>{featuredProject.outcome}</p>
+    </article>
+  </div>
+
+  <div class="case-detail">
+    <div>
+      <h3>Build Notes</h3>
+      <ul>
+        {featuredProject.approach.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+    <div>
+      <h3>Stack</h3>
+      <div class="tag-list">
+        {featuredProject.stack.map((item) => <span>{item}</span>)}
+      </div>
+      <a class="text-link" href={featuredProject.repo} target="_blank" rel="noopener">
+        View repository
+        <Icon name="external" />
+      </a>
+    </div>
+  </div>
+</section>

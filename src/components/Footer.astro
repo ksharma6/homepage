@@ -1,0 +1,18 @@
+---
+import Icon from './Icon.astro';
+import { profile } from '@data/portfolio';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer section-shell">
+  <div>
+    <p class="eyebrow">Contact</p>
+    <h2>Let’s build reliable AI products.</h2>
+  </div>
+  <div class="footer-links">
+    <a href={profile.resumeHref}><Icon name="resume" />Resume</a>
+    <a href={profile.links.github} target="_blank" rel="noopener"><Icon name="github" />GitHub</a>
+    <a href={profile.links.linkedin} target="_blank" rel="noopener"><Icon name="linkedin" />LinkedIn</a>
+  </div>
+  <small>&copy; {year} {profile.name}. All rights reserved.</small>
+</footer>

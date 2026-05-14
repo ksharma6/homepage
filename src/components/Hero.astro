@@ -1,0 +1,29 @@
+---
+import Icon from './Icon.astro';
+import HeroVisual from './HeroVisual.astro';
+import { profile } from '@data/portfolio';
+---
+
+<section class="hero section-shell" id="top">
+  <div class="hero-copy">
+    <p class="eyebrow">{profile.role}</p>
+    <h1>{profile.name}</h1>
+    <p class="hero-tagline">{profile.tagline}</p>
+    <p class="hero-summary">{profile.summary}</p>
+    <div class="hero-actions" aria-label="Portfolio actions">
+      <a class="button primary" href={profile.resumeHref}>
+        <Icon name="resume" />
+        Resume
+      </a>
+      <a class="button" href={profile.links.github} target="_blank" rel="noopener">
+        <Icon name="github" />
+        GitHub
+      </a>
+      <a class="button" href={profile.links.linkedin} target="_blank" rel="noopener">
+        <Icon name="linkedin" />
+        LinkedIn
+      </a>
+    </div>
+  </div>
+  <HeroVisual />
+</section>
