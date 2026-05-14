@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '@components/Nav.astro';
+import Hero from '@components/Hero.astro';
+import ImpactStrip from '@components/ImpactStrip.astro';
+import ProjectCaseStudy from '@components/ProjectCaseStudy.astro';
+import Experience from '@components/Experience.astro';
+import Skills from '@components/Skills.astro';
+import Footer from '@components/Footer.astro';
+import { profile } from '@data/portfolio';
+---
+
+<BaseLayout
+  title={`${profile.name} | ${profile.role}`}
+  description="Portfolio for Kishen Sharma, a Machine Learning Engineer building production-grade AI systems, agentic workflows, and MLOps pipelines."
+>
+  <Nav />
+  <main>
+    <Hero />
+    <ImpactStrip />
+    <ProjectCaseStudy />
+    <Experience />
+    <Skills />
+  </main>
+  <Footer />
+</BaseLayout>
