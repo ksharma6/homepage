@@ -12,3 +12,7 @@ npm run preview
 ```
 
 The public resume is expected at `public/assets/Kishen-Sharma-Resume.pdf`.
+
+## AWS domain
+
+Parking and launch notes for `kishensharma.com` are in [docs/aws-domain-parking.md](docs/aws-domain-parking.md).
