@@ -1,0 +1,13 @@
+---
+import { impactHighlights } from '@data/portfolio';
+---
+
+<section class="impact-strip section-shell" aria-label="Selected impact highlights">
+  {impactHighlights.map((item) => (
+    <article class="impact-item">
+      <strong>{item.value}</strong>
+      <span>{item.label}</span>
+      <p>{item.detail}</p>
+    </article>
+  ))}
+</section>

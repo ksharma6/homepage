@@ -1,0 +1,22 @@
+---
+const nodes = ['Gmail', 'Triage', 'Context', 'Draft', 'Slack'];
+---
+
+<div class="hero-visual" aria-label="Animated agent workflow from inbox to reviewed reply">
+  <div class="workflow-card">
+    <div class="workflow-topline">
+      <span>Agent workflow</span>
+      <strong>review-first</strong>
+    </div>
+    <div class="workflow-nodes">
+      {nodes.map((node, index) => (
+        <div class="workflow-node" style={`--delay: ${index * 0.16}s`}>
+          <span>{node}</span>
+        </div>
+      ))}
+    </div>
+    <div class="signal-grid" aria-hidden="true">
+      {Array.from({ length: 24 }).map((_, index) => <span style={`--delay: ${index * 0.04}s`}></span>)}
+    </div>
+  </div>
+</div>
